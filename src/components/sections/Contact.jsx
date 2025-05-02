@@ -70,7 +70,7 @@ export default function Contact() {
   return (
     <section id="contact" className={`min-h-screen relative flex flex-col items-center justify-center py-10 px-4 ${theme === 'dark' ? ' text-white' : ' text-gray-800'}`}>
       <RevealOnScroll>
-        <div className="max-w-4xl w-screen mx-auto">
+        <div className="max-w-4xl px-4 w-screen mx-auto">
           <h2 className='text-4xl font-bold mb-8 bg-gradient-to-r from-sky-500 to-blue-700 bg-clip-text text-center text-transparent'>
             Get In Touch
           </h2>
