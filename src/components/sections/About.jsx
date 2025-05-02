@@ -7,73 +7,73 @@ function About() {
   const frontendSkills = [
     { 
       name: 'HTML5', 
-      icon: <img src="/html5.png" alt="HTML5" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/html5.png" alt="HTML5" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'CSS3', 
-      icon: <img src="/css3.png" alt="CSS3" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/css3.png" alt="CSS3" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'Ionic', 
-      icon: <img src="/ionic.png" alt="Ionic" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/ionic.png" alt="Ionic" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'Angular', 
-      icon: <img src="/angular.png" alt="Angular" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/angular.png" alt="Angular" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'JavaScript', 
-      icon: <img src="/javascript.png" alt="JavaScript" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/javascript.png" alt="JavaScript" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'TypeScript', 
-      icon: <img src="/typescript.png" alt="TypeScript" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/typescript.png" alt="TypeScript" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'React', 
-      icon: <img src="/react.png" alt="React" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/react.png" alt="React" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'SASS', 
-      icon: <img src="/sass.png" alt="SASS" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/sass.png" alt="SASS" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'TailwindCSS', 
-      icon: <img src="/tailwindcss.png" alt="TailwindCSS" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/tailwindcss.png" alt="TailwindCSS" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     }
   ];
   
   const backendSkills = [
     { 
       name: '.NET', 
-      icon: <img src="/dotnet.png" alt=".NET" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/dotnet.png" alt=".NET" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'SQL', 
-      icon: <img src="/sql.png" alt="SQL" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/sql.png" alt="SQL" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'C#', 
-      icon: <img src="/csharp.png" alt="API Development" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/csharp.png" alt="API Development" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     }
   ];
   
   const tools = [
     { 
       name: 'Git', 
-      icon: <img src="/github.png" alt="Git" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/github.png" alt="Git" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'VS Code', 
-      icon: <img src="/vscode.png" alt="VS Code" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/vscode.png" alt="VS Code" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'Visual Studio', 
-      icon: <img src="/visualstudio.png" alt="Visual Studio" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/visualstudio.png" alt="Visual Studio" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     },
     { 
       name: 'Figma', 
-      icon: <img src="/figma.png" alt="Figma" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
+      icon: <img src="/eo-portfolio/figma.png" alt="Figma" className={`w-5 h-5 mr-2 ${theme === 'dark' ? 'dark-icon' : ''}`} />
     }
   ];
   

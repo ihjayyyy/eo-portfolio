@@ -63,10 +63,14 @@ function Navbar({ menuOpen, setMenuOpen }) {
                     : 'bg-[rgba(255,255,255,0.8)] border-black/10'}`}>
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex justify-between items-center h-16">
-
-                        <a href="#home" className={`cursor-pointer font-mono text-2xl font-bold ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
-                            EO<span className="text-sky-500">.DEV</span>
-                        </a>
+                        
+                    <a href="#home" onClick={() => scrollToSection('home')} className="cursor-pointer">
+                        <img
+                            src={theme === 'dark' ? '/eo-portfolio/icon-white.svg' : '/eo-portfolio/icon-black.svg'}
+                            alt="Logo"
+                            className="h-10 w-auto"
+                        />
+                    </a>
 
                         <div className="md:hidden">
                             <button

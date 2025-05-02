@@ -7,13 +7,13 @@ function Home() {
   const { theme } = useContext(ThemeContext);
   
   return (
-    <section id="home" className={`relative min-h-screen flex items-center justify-center pt-20 theme-transition ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
+    <section id="home" className={`relative min-h-screen flex items-center justify-center pt-20 pb-10 theme-transition ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
       <RevealOnScroll>
         <div className="max-w-4xl gap-2 mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
             <div className="text-center md:text-left z-10 md:max-w-lg">
               <div className="md:hidden mb-6 flex justify-center ">
                 <img 
-                  src="/profile-pic.jpg" 
+                  src="/eo-portfolio/profile-pic.jpg" 
                   alt="Profile" 
                   className="rounded-xl h-64 w-64 shadow-xl"
                 />
@@ -68,7 +68,7 @@ function Home() {
           
           <div className={`hidden md:block rounded-xl hover:-translate-y-1 transition-all border ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30' : 'border-gray-300 hover:border-sky-500/80'}`}>
             <img 
-              src="/profile-pic.jpg" 
+              src="/eo-portfolio/profile-pic.jpg" 
               alt="Profile" 
               className="rounded-xl h-96 w-80 shadow-xl"
             />
