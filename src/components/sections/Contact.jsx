@@ -87,7 +87,7 @@ export default function Contact() {
                   href="https://www.linkedin.com/in/elbert-john-olivar-b073131b9/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className={`flex items-center p-4 rounded-xl transition-all hover:-translate-y-1 ${
+                  className={`sub-card ${
                     theme === 'dark' 
                       ? 'bg-white/5 hover:bg-white/10 border border-white/10 hover:border-sky-500/30' 
                       : 'bg-gray-50 hover:bg-gray-100 border border-gray-200 hover:border-sky-500/80'
@@ -106,7 +106,7 @@ export default function Contact() {
                   href="https://github.com/ihjayyyy" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className={`flex items-center p-4 rounded-xl transition-all hover:-translate-y-1 ${
+                  className={`sub-card ${
                     theme === 'dark' 
                       ? 'bg-white/5 hover:bg-white/10 border border-white/10 hover:border-sky-500/30' 
                       : 'bg-gray-50 hover:bg-gray-100 border border-gray-200 hover:border-sky-500/80'
@@ -125,7 +125,7 @@ export default function Contact() {
                   href="https://www.instagram.com/ihjayyy/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className={`flex items-center p-4 rounded-xl transition-all hover:-translate-y-1 ${
+                  className={`sub-card ${
                     theme === 'dark' 
                       ? 'bg-white/5 hover:bg-white/10 border border-white/10 hover:border-sky-500/30' 
                       : 'bg-gray-50 hover:bg-gray-100 border border-gray-200 hover:border-sky-500/80'
@@ -144,7 +144,7 @@ export default function Contact() {
                   href="https://www.facebook.com/Ihjayyyy" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className={`flex items-center p-4 rounded-xl transition-all hover:-translate-y-1 ${
+                  className={`sub-card ${
                     theme === 'dark' 
                       ? 'bg-white/5 hover:bg-white/10 border border-white/10 hover:border-sky-500/30' 
                       : 'bg-gray-50 hover:bg-gray-100 border border-gray-200 hover:border-sky-500/80'
@@ -164,7 +164,7 @@ export default function Contact() {
                     📍 Location
                   </h3>
                   <p className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
-                    Manila, Philippines
+                    Kawit Cavite, Philippines
                   </p>
                 </div>
               </div>
@@ -188,10 +188,10 @@ export default function Contact() {
                     value={formData.name} 
                     placeholder="Your name..." 
                     onChange={(e)=>setFormData({...formData, name:e.target.value})}
-                    className={`w-full rounded-xl px-4 py-3 transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5 border ${
+                    className={`input ${
                       theme === 'dark' 
-                        ? 'bg-white/5 border-white/10 text-white hover:border-sky-500/30' 
-                        : 'bg-black/5 text-black border-gray-300 hover:border-sky-500/80'
+                        ? 'bg-white/5 border-white/10 text-white hover:border-sky-500/30 placeholder-gray-400' 
+                        : 'bg-black/5 text-black border-gray-300 hover:border-sky-500/80 placeholder-gray-500'
                     }`} 
                   />
                 </div>
@@ -208,10 +208,10 @@ export default function Contact() {
                     value={formData.email} 
                     onChange={(e)=>setFormData({...formData, email:e.target.value})}
                     placeholder="example@gmail.com" 
-                    className={`w-full rounded-xl px-4 py-3 transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5 border ${
+                    className={`input ${
                       theme === 'dark' 
-                        ? 'bg-white/5 border-white/10 text-white hover:border-sky-500/30' 
-                        : 'bg-black/5 text-black border-gray-300 hover:border-sky-500/80'
+                        ? 'bg-white/5 border-white/10 text-white hover:border-sky-500/30 placeholder-gray-400' 
+                        : 'bg-black/5 text-black border-gray-300 hover:border-sky-500/80 placeholder-gray-500'
                     }`} 
                   />
                 </div>
@@ -228,33 +228,29 @@ export default function Contact() {
                     placeholder="Subject..." 
                     required 
                     onChange={(e)=>setFormData({...formData, subject:e.target.value})}
-                    className={`w-full rounded-xl px-4 py-3 transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5 border ${
+                    className={`input ${
                       theme === 'dark' 
-                        ? 'bg-white/5 border-white/10 text-white hover:border-sky-500/30' 
-                        : 'bg-black/5 text-black border-gray-300 hover:border-sky-500/80'
+                        ? 'bg-white/5 border-white/10 text-white hover:border-sky-500/30 placeholder-gray-400' 
+                        : 'bg-black/5 text-black border-gray-300 hover:border-sky-500/80 placeholder-gray-500'
                     }`} 
                   />
                 </div>
 
-                <div className="relative">
-                  <label htmlFor="message" className={`block mb-2 font-medium ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>
-                    Message
-                  </label>
-                  <textarea 
-                    id="message" 
-                    name="message" 
-                    rows={4} 
-                    value={formData.message} 
-                    placeholder="Your message..." 
-                    required 
-                    onChange={(e)=>setFormData({...formData, message:e.target.value})}
-                    className={`w-full rounded-xl px-4 py-3 transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5 border ${
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows={4} 
+                  value={formData.message} 
+                  placeholder="Your message..." 
+                  required 
+                  onChange={(e)=>setFormData({...formData, message:e.target.value})}
+                  className={`input ${
                       theme === 'dark' 
-                        ? 'bg-white/5 border-white/10 text-white hover:border-sky-500/30' 
-                        : 'bg-black/5 text-black border-gray-300 hover:border-sky-500/80'
+                        ? 'bg-white/5 border-white/10 text-white hover:border-sky-500/30 placeholder-gray-400' 
+                        : 'bg-black/5 text-black border-gray-300 hover:border-sky-500/80 placeholder-gray-500'
                     }`} 
-                  />
-                </div>
+                />
+
 
                 <button 
                   type="submit" 

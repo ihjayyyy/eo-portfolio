@@ -115,7 +115,7 @@ function About() {
               </h3>
               <div className='flex flex-wrap gap-2'>
                 {frontendSkills.map((tech, key) =>
-                  <div key={key} className={`flex items-center px-3 py-2 rounded-lg ${
+                  <div key={key} className={`sub-card ${
                     theme === 'dark' 
                       ? 'bg-white/5 hover:bg-white/10 border border-white/10 hover:border-sky-500/30' 
                       : 'bg-gray-50 hover:bg-gray-100 border border-gray-200 hover:border-sky-500/80'
@@ -133,7 +133,7 @@ function About() {
               </h3>
               <div className='flex flex-wrap gap-2'>
                 {backendSkills.map((tech, key) =>
-                  <div key={key} className={`flex items-center px-3 py-2 rounded-lg ${
+                  <div key={key} className={`sub-card ${
                     theme === 'dark' 
                       ? 'bg-white/5 hover:bg-white/10 border border-white/10 hover:border-sky-500/30' 
                       : 'bg-gray-50 hover:bg-gray-100 border border-gray-200 hover:border-sky-500/80'
@@ -151,7 +151,7 @@ function About() {
               </h3>
               <div className='flex flex-wrap gap-2'>
                 {tools.map((tech, key) =>
-                  <div key={key} className={`flex items-center px-3 py-2 rounded-lg ${
+                  <div key={key} className={`sub-card ${
                     theme === 'dark' 
                       ? 'bg-white/5 hover:bg-white/10 border border-white/10 hover:border-sky-500/30' 
                       : 'bg-gray-50 hover:bg-gray-100 border border-gray-200 hover:border-sky-500/80'
