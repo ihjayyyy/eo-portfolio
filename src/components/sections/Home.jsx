@@ -36,7 +36,7 @@ function Home() {
 
               <div className="flex flex-wrap justify-center md:justify-start gap-4">
                 <a 
-                  href="/path-to-your-cv.pdf" 
+                  href="/eo-portfolio/Resume.pdf" 
                   download 
                   className="bg-sky-500 hover:bg-sky-600 text-white py-3 px-6 rounded font-medium flex items-center gap-2 transition hover:-translate-y-0.5 hover:shadow-lg"
                 >

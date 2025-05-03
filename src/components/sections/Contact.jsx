@@ -20,17 +20,22 @@ export default function Contact() {
     message: ''
   });
   
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Show loading state
+
     setNotification({
       show: true,
       type: 'loading',
       message: 'Sending your message...'
     });
     
-    emailjs.sendForm(import.meta.env.SERVICE_ID, import.meta.env.TEMPLATE_ID, e.target, import.meta.env.PUBLIC_KEY)
+    emailjs.sendForm(
+      import.meta.env.VITE_SERVICE_ID, 
+      import.meta.env.VITE_TEMPLATE_ID, 
+      e.target, 
+      import.meta.env.VITE_PUBLIC_KEY
+    )
       .then((res) => {
         // Success notification
         setNotification({
@@ -39,30 +44,25 @@ export default function Contact() {
           message: 'Message sent successfully! Thank you for reaching out.'
         });
         
-        // Reset form
         setFormData({name:'', subject:'', message:'', email:''});
         
-        // Hide notification after 5 seconds
         setTimeout(() => {
           setNotification(prev => ({...prev, show: false}));
         }, 5000);
       })
       .catch((error) => {
-        // Error notification
         setNotification({
           show: true,
           type: 'error',
           message: `Oops! Something went wrong. Please try again.`
         });
         
-        // Hide notification after 5 seconds
         setTimeout(() => {
           setNotification(prev => ({...prev, show: false}));
         }, 5000);
       });
   };
   
-  // Function to close notification manually
   const closeNotification = () => {
     setNotification(prev => ({...prev, show: false}));
   };
