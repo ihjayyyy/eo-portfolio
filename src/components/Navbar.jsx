@@ -68,7 +68,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
                         <img
                             src={theme === 'dark' ? '/eo-portfolio/icon-white.svg' : '/eo-portfolio/icon-black.svg'}
                             alt="Logo"
-                            className="h-10 w-auto"
+                            className="h-10 w-auto hover:-translate-y-0.5 transition"
                         />
                     </a>
 
@@ -89,7 +89,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
                                         e.preventDefault();
                                         scrollToSection(item.id);
                                     }}
-                                    className={`cursor-pointer relative px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                                    className={` hover:-translate-y-0.5 cursor-pointer relative px-3 py-2 text-sm font-medium transition-all rounded-md ${
                                         activeSection === item.id
                                             ? `${theme === 'dark' ? 'bg-sky-500 text-white' : 'bg-sky-200 text-sky-900'} font-bold`
                                             : `${theme === 'dark' ? 'text-gray-300 hover:text-white hover:bg-gray-800' : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'}`
