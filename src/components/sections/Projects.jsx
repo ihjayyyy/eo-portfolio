@@ -68,7 +68,7 @@ function Projects() {
                   href="https://apps.apple.com/ph/app/i-am-magsaysay/id6466820884" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className='bg-gray-800 hover:bg-gray-900 hover:-translate-y-0.5 text-white py-2 px-4 rounded-md transition flex items-center gap-2'
+                  className='secondary-filled-button'
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/>
