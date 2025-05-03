@@ -57,7 +57,7 @@ function Projects() {
                   href="https://play.google.com/store/apps/details?id=com.IAM.Magsaysay&pcampaignid=web_share" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className='bg-sky-500 hover:bg-sky-600 hover:-translate-y-0.5 text-white py-2 px-4 rounded-md transition flex items-center gap-2'
+                  className='filled-button'
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4 7.5l8-5 8 5M4 7.5v9l8 5M4 7.5l8 5M20 7.5v9l-8 5M20 7.5l-8 5"/>
@@ -122,7 +122,7 @@ function Projects() {
                   href="https://sysdevintegral360staging.sscgi.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className='bg-sky-500 hover:bg-sky-600 hover:-translate-y-0.5 text-white py-2 px-4 rounded-md transition flex items-center gap-2'
+                  className='filled-button'
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
@@ -181,7 +181,7 @@ function Projects() {
               </div>
             </div>
             
-            <div className={`p-6 rounded-xl border hover:-translate-y-1 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
+            <div className={`card ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
               <h3 className='text-xl font-bold mb-2'>
                 Zap Mobile App (EV Charging)
               </h3>
@@ -226,7 +226,7 @@ function Projects() {
               </div>
             </div>
 
-            <div className={`p-6 rounded-xl border hover:-translate-y-1 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
+            <div className={`card ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
               <h3 className='text-xl font-bold mb-2'>
                 Systems and Software Consulting Group Inc. Website
               </h3>

@@ -38,7 +38,7 @@ function Home() {
                 <a 
                   href="/eo-portfolio/Resume.pdf" 
                   download 
-                  className="bg-sky-500 hover:bg-sky-600 text-white py-3 px-6 rounded font-medium flex items-center gap-2 transition hover:-translate-y-0.5 hover:shadow-lg"
+                  className="filled-button"
                 >
                   <Download size={18} />
                   Download CV
@@ -46,7 +46,7 @@ function Home() {
 
                 <a 
                   href="#projects" 
-                  className={`border py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg 
+                  className={`outlined-button  
                     ${theme === 'dark' 
                         ? 'border-sky-500/50 hover:bg-sky-500/10 text-sky-500' 
                         : 'border-sky-600/50 hover:bg-sky-500/20 text-sky-600'}`}
@@ -56,7 +56,7 @@ function Home() {
                 
                 <a 
                   href="#contact" 
-                  className={`border py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg 
+                  className={`outlined-button  
                     ${theme === 'dark' 
                         ? 'border-sky-500/50 hover:bg-sky-500/10 text-sky-500' 
                         : 'border-sky-600/50 hover:bg-sky-500/20 text-sky-600'}`}

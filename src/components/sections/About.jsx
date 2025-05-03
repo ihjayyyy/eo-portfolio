@@ -109,7 +109,7 @@ function About() {
           </p>
     
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mb-8'>
-            <div className={`rounded-xl md:col-span-2 p-6 hover:-translate-y-1 transition-all border ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
+            <div className={`card md:col-span-2 ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
               <h3 className={`text-xl font-bold mb-4 ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>
                 Frontend
               </h3>
@@ -127,7 +127,7 @@ function About() {
               </div>
             </div>
 
-            <div className={`rounded-xl p-6 hover:-translate-y-1 transition-all border ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
+            <div className={`card ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
               <h3 className={`text-xl font-bold mb-4 ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>
                 Backend
               </h3>
@@ -145,7 +145,7 @@ function About() {
               </div>
             </div>
             
-            <div className={`rounded-xl p-6 hover:-translate-y-1 transition-all border ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
+            <div className={`card ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
               <h3 className={`text-xl font-bold mb-4 ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>
                 Tools
               </h3>
@@ -166,7 +166,7 @@ function About() {
 
           {/* Rest of the component remains the same */}
           <div className='grid md:grid-cols-2 gap-8 mb-8'>
-            <div className={`p-6 rounded-xl border hover:-translate-y-1 transition-all ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
+            <div className={`card ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
               <h3 className='text-xl font-bold mb-4'>🎓 Education</h3>
               <div className={`${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
                 <div className="mb-4">
@@ -190,7 +190,7 @@ function About() {
               </div>
             </div>
 
-            <div className={`p-6 rounded-xl border hover:-translate-y-1 transition-all ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
+            <div className={`card ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
               <h3 className='text-xl font-bold mb-4'>💼 Work Experience</h3>
               <div className={`space-y-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
                 <div>
@@ -211,7 +211,7 @@ function About() {
             </div>
           </div>
 
-          <div className={`text-center p-6 rounded-xl border hover:-translate-y-1 transition-all ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
+          <div className={`text-center card ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30 border' : 'border-gray-300 hover:border-sky-500/80 border'}`}>
             <h3 className={`text-xl font-semibold mb-4 ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>When I'm Not Coding</h3>
             <p className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
             Outside of development, I enjoy going to the gym, playing computer games and playing billiards. I find that these activities help fuel my creativity and provide fresh perspectives that I bring back to my technical work.

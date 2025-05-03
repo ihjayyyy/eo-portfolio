@@ -77,7 +77,7 @@ export default function Contact() {
           
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
             
-            <div className={`p-6 rounded-xl border flex flex-col hover:-translate-y-1 hover:shadow-lg transition-all ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30' : 'border-gray-300 hover:border-sky-500/80'}`}>
+            <div className={`card ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30' : 'border-gray-300 hover:border-sky-500/80'}`}>
               <h3 className='text-xl font-bold mb-2'>
                 Connect With Me
               </h3>
@@ -170,7 +170,7 @@ export default function Contact() {
               </div>
             </div>
             
-            <div className={`p-6 rounded-xl border flex flex-col justify-around hover:-translate-y-1 hover:shadow-lg transition-all ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30' : 'border-gray-300 hover:border-sky-500/80'}`}>
+            <div className={`card ${theme === 'dark' ? 'border-white/10 hover:border-sky-500/30' : 'border-gray-300 hover:border-sky-500/80'}`}>
               <h3 className='text-xl font-bold mb-2'>
                 Send Me a Message
               </h3>
@@ -258,7 +258,7 @@ export default function Contact() {
 
                 <button 
                   type="submit" 
-                  className="cursor-pointer w-full bg-sky-500 text-white py-3 px-6 rounded-xl font-medium transition-all hover:-translate-y-1 hover:shadow-lg"
+                  className="filled-button w-full"
                 >
                   Send Message
                 </button>

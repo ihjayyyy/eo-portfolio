@@ -40,6 +40,20 @@ html, body {
   background-attachment: fixed;
 }
 
+@layer components{
+  .card{
+    @apply p-6 rounded-xl border flex flex-col hover:-translate-y-1 hover:shadow-lg transition-all
+  }
+
+  .outlined-button{
+    @apply border py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg
+  }
+
+  .filled-button{
+    @apply cursor-pointer bg-sky-500 hover:bg-sky-600 text-white py-3 px-6 rounded font-medium flex items-center justify-center gap-2 transition hover:-translate-y-0.5 hover:shadow-lg
+  }
+}
+
 @layer utilities {
   @keyframes blink {
     0%, 100% {
